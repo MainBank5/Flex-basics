@@ -22,13 +22,17 @@ it also has space-end which adds space to the ends and between items and space-b
 
 }
 
-
+/* centering item content using flex.  */
 .item {
     background-color: blue;
     width: 100px;
     height: 100px;
     margin: 10px;
     color: #fff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 /*  
 .item:nth-child(3) {
