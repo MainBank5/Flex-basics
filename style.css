@@ -34,12 +34,16 @@ it also has space-end which adds space to the ends and between items and space-b
     justify-content: center;
     align-items: center;
 }
-/*  
+
 .item:nth-child(3) {
-    align-self: end;
+    /*align-self: end;*/
+    order: 1;
 }
 
+/* changing order of items */
+/* flex basis is for setting the width of the item(s). In this case our width is different since the direction is column */
 .item:nth-child(2) {
-    align-self: start;
+    /*align-self: start;*/
+    order: 3;
+    flex-basis: 170px;
 }
-*/
