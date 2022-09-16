@@ -1,4 +1,39 @@
 * {
+    box-sizing: 0;
     margin: 0;
     padding: 0;
 }
+
+/* by default the main axis is horizontal. */
+/* justify content pushes the items to the  default START(left) END(right), and CENTER
+it also has space-end which adds space to the ends and between items and space-between which adds space BETWEEN only*/
+/* a height is needed to align the items */
+/* align-items moves items the START(top), END(bottom) and  */
+/* you can also align the items using align-self property and pseudoselector */
+.flex-container {
+    display: flex;
+    background-color: yellow;
+    flex-direction: row;
+    justify-content: start;
+    align-items: end;
+
+    height: 350px;
+}
+
+
+.item {
+    background-color: blue;
+    width: 100px;
+    line-height: 100px;
+    margin: 10px;
+    color: #fff;
+}
+/*  
+.item:nth-child(3) {
+    align-self: end;
+}
+
+.item:nth-child(2) {
+    align-self: start;
+}
+*/
