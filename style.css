@@ -34,14 +34,17 @@ it also has space-end which adds space to the ends and between items and space-b
     justify-content: center;
     align-items: center;
 }
-
+/* flex grow has no units. its sets the growth rate of items for responsiveness */
 .item:nth-child(3) {
     /*align-self: end;*/
     order: 1;
+    flex-grow: 4;
 }
 
 /* changing order of items */
 /* flex basis is for setting the width of the item(s). In this case our width is different since the direction is column */
+/* the shorthand  for flex grow, shrink and basis is FLEX. its defaul value is 0 1 auto. */
+/* short hand forr flex direction and wrap is FLEX */
 .item:nth-child(2) {
     /*align-self: start;*/
     order: 3;
