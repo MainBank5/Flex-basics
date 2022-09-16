@@ -44,7 +44,8 @@ it also has space-end which adds space to the ends and between items and space-b
 /* changing order of items */
 /* flex basis is for setting the width of the item(s). In this case our width is different since the direction is column */
 /* the shorthand  for flex grow, shrink and basis is FLEX. its defaul value is 0 1 auto. */
-/* short hand forr flex direction and wrap is FLEX */
+/* short hand forr flex direction and wrap is FLEX. The second and 3rd parameter can be ignored such that 
+flex:1  */
 .item:nth-child(2) {
     /*align-self: start;*/
     order: 3;
